@@ -3,7 +3,7 @@
 SUBDIRS =
 DIST_SUBDIRS = cfg
 
-AM_CPPFLAGS = -Wall -Werror -Wextra -Wreturn-type -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -D_LARGE_FILE $(LIBUSB1_CFLAGS)
+AM_CPPFLAGS = -Wall -Werror -Wextra -Wreturn-type -Wno-format-truncation -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -D_LARGE_FILE $(LIBUSB1_CFLAGS)
 
 bin_PROGRAMS = rkdeveloptool
 rkdeveloptool_SOURCES = main.cpp \
